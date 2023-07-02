@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.container {
+    height: 100%;
+    width: 100%;
+}
+.menu {
+    height: 100%;
+    width: 21%;
+    background-color: #faf9fe;
+    float: left;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.model {
+    height: 100%;
+    width: 79%;
+    float: right;
+}
+.heading {
+    height: 20%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.heading h2 {
+    padding-left: 20px;
+    color: #707070;
+}
+.menuContent {
+    margin-top: 0px;
+    height: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.menuContent ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.menuContent ul li {
+    padding: 5px 0;
+    width: 100%;
+    height: 21.5%;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.menuContent ul li p {
+    padding-left: 20px;
+    color: #707070;
+}
+.logout {
+    height: 20%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.log-out {
+    height: 85px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logout a {
+    padding-left: 20px;
+    color: #707070;
+}
+.sett {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.sett p {
+    padding-left: 20px;
+    cursor: pointer;
+    color: #707070;
+    text-decoration: underline;
+}
+.head1 {
+    height: 15%;
+}
+.content1 {
+    height: 84%;
+    width: 100%;
+    overflow: auto;
+}
+.menubar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menubar ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menubar ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.menubar ul li p {
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid #DCDCDC;
+    background-color: #DCDCDC;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menubar ul li p:hover {
+    color: #344fa1;
+    opacity: 0.8;
+    transition: all ease-in 0.2s;
+}
+#students,#notiflec,#addnotif,#addlecture {
+    height: 100%;
+}
+.divul {
+    display: flex;
+    flex-flow: column;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+}
+.ulnoti {
+    height: 100%;
+}
+.ulnoti li {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 280px;
+    background-color: #EBFEFF;
+    /* padding-bottom: 10px; */
+}
+.ulnoti li:nth-child(even) {
+    background-color: #C2F2F2;
+}
+.ulnoti li:hover {
+    background-color: #ddd;
+}
+.infoless {
+    height: 100px;
+    display: flex;
+}
+.infoness {
+    height: 150px;
+    width: 100%;
+}
+.namenoti {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
+}
+.app {
+    margin-left: auto;
+    padding-right: 100px;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.subjnotif {
+    height: 30px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+}
+.decline {
+    color: #fff;
+    background-color: #FF002B;
+    border-color: #FF002B;
+    height: 30px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.decline:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+    cursor: pointer;
+}
+#messagenotif {
+    margin-left: 10px;
+    margin-right: 90px;
+}
+.messagenotif {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btn:hover {
+    color: #eee;
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.allsub {
+    font-size: large;
+    width: 150px;
+    background-color: #5C91B6;
+    cursor: pointer;
+    color: white;
+    height: 40px;
+}
+.submit1 {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+#textareaaddnotif {
+    background-color: #FAF9FE;
+}
+.lecclasscontent form {
+    height: 100%;
+}
+.linksforlec {
+    width: 100%;
+    height: 20%;
+}
+.lecsupload {
+    height: 100%;
+}
+#modalnum2 {
+    height: 80%;
+}
+#videomp4div,#videourldiv,#pdfdiv {
+    height: 100%;
+}
+.divforvideo,.divforpdf {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#videomp4,#videourl,#pdfs {
+    margin: 20px 0 40px 0;
+    color: #707070;
+}
+#videourl {
+    width: 300px;
+}
+#uploadvideomp4,#uploadvideourl,#uploadpdf {
+    font-size: large;
+    width: 150px;
+    background-color: #5C91B6;
+    cursor: pointer;
+    height: 40px;
+}

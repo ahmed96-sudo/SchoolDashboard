@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.container {
+    height: 100%;
+    width: 100%;
+}
+.menu {
+    height: 100%;
+    width: 21%;
+    background-color: #faf9fe;
+    float: left;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.model {
+    height: 100%;
+    width: 79%;
+    float: right;
+}
+.heading {
+    height: 20%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.heading h2 {
+    padding-left: 20px;
+    color: #707070;
+}
+.menuContent {
+    margin-top: 0px;
+    height: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.menuContent ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.menuContent ul li {
+    padding: 5px 0;
+    width: 100%;
+    height: 21.5%;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.menuContent ul li p {
+    padding-left: 20px;
+    color: #707070;
+}
+.logout {
+    height: 20%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.log-out {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logout a {
+    padding-left: 20px;
+    color: #707070;
+}
+.sett {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.sett p {
+    padding-left: 20px;
+    cursor: pointer;
+    color: #707070;
+    text-decoration: underline;
+}
+.head1 {
+    height: 15%;
+}
+.content1 {
+    height: 84%;
+    width: 100%;
+    overflow: auto;
+}
+.menubar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menubar ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menubar ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.menubar ul li p {
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid #DCDCDC;
+    background-color: #DCDCDC;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menubar ul li p:hover {
+    color: #344fa1;
+    opacity: 0.8;
+    transition: all ease-in 0.2s;
+}
+.teach {
+    margin-right: auto;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.teach h1 {
+    text-transform: capitalize;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #5C91B6;
+    width: 125px;
+}
+.divul {
+    display: flex;
+    flex-flow: column;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+}
+.ulreg {
+    height: 100%;
+}
+.ulreg li {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 280px;
+    background-color: #EBFEFF;
+    /* padding-bottom: 10px; */
+}
+.ulreg li:nth-child(even) {
+    background-color: #C2F2F2;
+}
+.ulreg li:hover {
+    background-color: #ddd;
+}
+.infoless {
+    height: 100px;
+    display: flex;
+    cursor: pointer;
+}
+.infoness {
+    height: 150px;
+    width: 100%;
+}
+.namereg {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
+}
+.app {
+    margin-left: auto;
+    padding-right: 100px;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.approve {
+    height: 30px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ulnoti {
+    height: 100%;
+}
+.ulnoti li {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 280px;
+    background-color: #EBFEFF;
+    /* padding-bottom: 10px; */
+}
+.ulnoti li:nth-child(even) {
+    background-color: #C2F2F2;
+}
+.ulnoti li:hover {
+    background-color: #ddd;
+}
+.subj_select_notif {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.popup_content {
+    background-color: #fefefe;
+    margin: 6% auto;
+    border: 1px solid #888;
+    width: 60%;
+    height: 400px;
+}
+.popup_content form {
+    height: 100%;
+    width: 100%;
+    background-color: #FAF9FE;
+    box-shadow: 2px 2px 10px 0px #686571;
+}
+.info_pop {
+    height: 70%;
+    width: 100%;
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btns_pop {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.open {
+    height: 30px;
+    width: 130px;
+    background-color: #84b8db;
+    border: 1px solid #84b8db;
+    border-radius: 5px;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+}
+.firpara {
+    margin: 0 0 30px 0;
+    background-color: aliceblue;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.open:hover {
+ background-color: #5C91B6;
+}

@@ -1,0 +1,665 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.container {
+    height: 100%;
+    width: 100%;
+}
+/* .menu {
+    height: 100%;
+    width: 30%;
+    background-color: turquoise;
+}
+.model {
+    height: 100%;
+    width: 70%;
+    background-color: white;
+} */
+.menu {
+    height: 100%;
+    width: 21%;
+    background-color: #faf9fe;
+    float: left;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.model {
+    height: 100%;
+    width: 79%;
+    float: right;
+}
+.heading {
+    height: 20%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.heading h2 {
+    padding-left: 20px;
+    color: #707070;
+}
+.menuContent {
+    margin-top: 0px;
+    height: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.menuContent ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.menuContent ul li {
+    padding: 5px 0;
+    width: 100%;
+    height: 21.5%;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.menuContent ul li p {
+    padding-left: 20px;
+    color: #707070;
+}
+#adstud,#dlstud,#adnoti {
+    background-color: #5C91B6;
+    color: white;
+}
+.logout {
+    height: 20%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.log-out {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logout a {
+    padding-left: 20px;
+    color: #707070;
+}
+.sett {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.sett p {
+    padding-left: 20px;
+    cursor: pointer;
+    color: #707070;
+    text-decoration: underline;
+}
+.btn:hover {
+    color: #eee;
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#teachers {
+    height: 100%;
+}
+.head1 {
+    height: 15%;
+}
+.content1 {
+    height: 84%;
+    width: 100%;
+    overflow: auto;
+}
+.teach {
+    margin-right: auto;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.menubar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menubar ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menubar ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.menubar ul li p {
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid #DCDCDC;
+    background-color: #DCDCDC;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menubar ul li p:hover {
+    color: #344fa1;
+    opacity: 0.8;
+    transition: all ease-in 0.2s;
+}
+.menubar ul li button {
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid #eee;
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menubar ul li button:hover {
+    color: #344fa1;
+    opacity: 0.8;
+    transition: all ease-in 0.2s;
+}
+.teach h1 {
+    text-transform: capitalize;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #5C91B6;
+    width: 125px;
+}
+#students {
+    height: 100%;
+}
+#students h1 {
+    text-transform: capitalize;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #F0EBCC;
+    width: 120px;
+}
+#addStudent {
+    height: 100%;
+}
+#addStudent h1 {
+    text-transform: capitalize;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #5C91B6;
+    width: 210px;
+}
+#addStudent form {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+/* .name,.con,.num{
+    display: table-row;
+    height: 60px;
+    text-align: center;
+}
+.fname,.lname {
+    display: table-cell;
+}
+.dt {
+    display: table-row;
+    text-align: center;
+}
+.bdate {
+    display: table-cell;
+    height: 60px;
+    position: relative;
+    left: 250px;
+}
+.tel,.email {
+    display: table-cell;
+}
+.nat,.start {
+    display: table-cell;
+}
+.subb {
+    
+} */
+.name {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.dt {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.con {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.num {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.subb {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.national {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.users {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.substud {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.all {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.all label {
+    font-size: large;
+    margin-right: 5px;
+    align-self: center;
+}
+.all input {
+    border-radius: 3px;
+    border: 1px solid black;
+    width: 250px;
+    height: 30px;
+}
+.subj {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.subj label {
+    align-self: center;
+    font-size: large;
+    margin-right: 10px;
+}
+.subj select {
+    width: 150px;
+    height: 80px;
+}
+.nationalnumber {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.nationalnumber label {
+    align-self: center;
+    font-size: large;
+    margin-right: 10px;
+}
+.nationalnumber select {
+    height: 30px;
+    width: 240px;
+}
+#eye {
+    position: relative;
+    right: 25px;
+    align-self: center;
+    cursor: pointer;
+}
+.substud input {
+    background-color: #5C91B6;
+    border-radius: 10px;
+    width: 150px;
+    cursor: pointer;
+}
+.btnstud {
+    height: 100%;
+}
+.btnstud h1 {
+    text-transform: capitalize;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #5C91B6;
+    width: 120px;
+}
+.btnstud form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    width: 100%;
+}
+.second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 100%;
+}
+#butn1 {
+    margin-right: 270px;
+    width: 130px;
+    height: 70px;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid #eee;
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#butn1:hover {
+    color: #344fa1;
+    opacity: 0.8;
+    transition: all ease-in 0.2s;
+}
+#butn2 {
+    width: 130px;
+    height: 70px;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid #eee;
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#butn2:hover {
+    color: #344fa1;
+    opacity: 0.8;
+    transition: all ease-in 0.2s;
+}
+#butn3 {
+    margin-right: 270px;
+    width: 130px;
+    height: 70px;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid #eee;
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#butn3:hover {
+    color: #344fa1;
+    opacity: 0.8;
+    transition: all ease-in 0.2s;
+}
+#butn4 {
+    width: 130px;
+    height: 70px;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid #eee;
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#butn4:hover {
+    color: #344fa1;
+    opacity: 0.8;
+    transition: all ease-in 0.2s;
+}
+#teach1 {
+    width: 24%;
+}
+#tch {
+    width: 30%;
+}
+#tch h1 {
+    width: 205px;
+}
+#addTeacher {
+    height: 100%;
+}
+#su {
+    margin-right: 70px;
+}
+#deletestudent1 {
+    height: 100%;
+}
+#form1 {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#delstud {
+    margin: auto;
+    width: 300px;
+    height: 100px;
+}
+#delstud option {
+    font-size: 20px;
+}
+#editteacher,#editstudent,#register,.divul {
+    height: 100%;
+}
+#addnotific,#editnotific,#delnotific,#notific {
+    height: 100%;
+}
+.form3 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.textare2 {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.textare2 label {
+    margin-bottom: 5px;
+    background-color: #5C91B6;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+}
+#message1 {
+    width: 400px;
+    height: 100%;
+    background-color: #eee;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(196, 195, 195, 0.664);
+}
+.selectstudteach {
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.allteach {
+    background-color: #eee;
+    font-size: large;
+    cursor: pointer;
+}
+.allteach:hover {
+    color: #5C91B6;
+    transition: all ease-in 0.2s;
+}
+.submit1 {
+    padding: 2%;
+}
+.allsub {
+    font-size: large;
+    width: 150px;
+    background-color: #5C91B6;
+    cursor: pointer;
+}
+.tab1 {
+    font-family: Arial, Helvetica, sans-serif;
+    /* border-collapse: collapse; */
+    border-spacing: 0;
+    height: 100%;
+    width: 99%;
+    background-color: white;
+    margin-left: 10px;
+}
+.tab1 caption {
+    border: 1px solid;
+    width: 150px;
+    height: 25px;
+    text-align: center;
+}
+.tab1 thead tr {
+    display: block;
+}
+.tab1 thead tr th {
+    width: 90px;
+}
+.tab1 tr:nth-child(even){background-color: #f2f2f2;}
+.tab1 tbody tr:hover {background-color: #ddd;}
+.tab1 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+.tab1 tbody {
+    display: block;
+    height: 430px;
+    overflow: auto;
+    width: 100%;
+}
+.tab1 tbody tr td {
+    width: 90px;
+    max-width: 90px;
+    overflow-x: auto;
+    /* text-align: center; */
+}
+.tab1 td,.tab1 th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.tab2 {
+    font-family: Arial, Helvetica, sans-serif;
+    /* border-collapse: collapse; */
+    border-spacing: 0;
+    height: 100%;
+    width: 99%;
+    background-color: white;
+    margin-left: 10px;
+}
+.tab2 caption {
+    border: 1px solid;
+    width: 150px;
+    height: 25px;
+    text-align: center;
+}
+.tab2 thead tr {
+    display: block;
+}
+.tab2 thead tr th {
+    width: 82px;
+}
+.tab2 tr:nth-child(even){background-color: #f2f2f2;}
+.tab2 tbody tr:hover {background-color: #ddd;}
+.tab2 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+.tab2 tbody {
+    display: block;
+    height: 430px;
+    overflow: auto;
+    width: 100%;
+}
+.tab2 tbody tr td {
+    width: 82px;
+    max-width: 82px;
+    overflow-x: auto;
+    /* text-align: center; */
+}
+.tab2 td,.tab2 th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
